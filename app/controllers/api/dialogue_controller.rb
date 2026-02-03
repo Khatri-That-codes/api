@@ -1,4 +1,4 @@
-require "driver_dialogue"
+require_relative "../../data/driver_dialogue"
 
 class Api::DialogueController < ApplicationController
 
