@@ -5,7 +5,7 @@ This is an API that serves to provide  dialogue/radio responses for different F1
 This was mainly developed in Ruby, specifically using Ruby on Rails and Bash.
 It demonstrates the use of Rails controllers and modules
 
-Deployed using: Render
+Deployed using: Render (URL : https://f1-radio-bda6.onrender.com )
 
 ## Prerequisites
 - Ruby 3.1.2
