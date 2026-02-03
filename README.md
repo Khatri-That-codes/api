@@ -2,7 +2,7 @@
 
 This is an API that serves to provide  dialogue/radio responses for different F1 drivers and teams as per the user request and subject to availability of the driver/team name in the data file, if not, it gives a random generic quote. 
 
-This was mainly developed in Ruby, specifically using Ruby on Rails and Bash.
+This was mainly developed in **Ruby**, specifically using **Ruby on Rails** and **Bash**.
 It demonstrates the use of Rails controllers and modules
 
 Deployed using: Render (URL : https://f1-radio-bda6.onrender.com )
