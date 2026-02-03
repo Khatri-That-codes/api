@@ -12,4 +12,6 @@ Rails.application.routes.draw do
     get "/driver/:driver", to: "dialogue#driver"
     get "/team/:team", to: "dialogue#team"
   end
+
+  root to: ->(env) { [200, { "Content-Type" => "text/html" }, ["<h1>Welcome to Dialogue API</h1><p>Use /api/driver/:driver or /api/team/:team to get dialogue data.</p>"]] }
 end
