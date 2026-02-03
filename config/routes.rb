@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   namespace :api do
-    get "dialogue/:driver", to: "dialogue#show" 
+    get "/driver/:driver", to: "dialogue#driver"
+    get "/team/:team", to: "dialogue#team"
   end
 end
