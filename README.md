@@ -13,18 +13,38 @@ Deployed using: Render (URL : https://f1-radio-bda6.onrender.com )
 - SQLite3
 - Bundler
 
-##  API Usage Instructions
+##  Remote Use (hosted on Render)
 
-### Locally
+Base URL = `https://f1-radio-bda6.onrender.com`
+
+### Routing Information
+#### To get Driver Quotes
+Add  `/api/driver/{driver_name}` after base URL
+
+- **GET /driver**
+  - Query Parameter: `driver` (e.g., `/driver/max_verstappen`)
+  - Returns json with driver name and random quote.
+    
+  Example: 
+  ```
+  {"driver":"max_verstappen","dialogue":"Simply, simply lovely!"}
+  ```
+
+#### To get Team Quotes
+Add `/api/team/{team_name}` after base URL
+
+- **GET /team**
+  - Query Parameter: `team` (e.g., `/team/red_bull`)
+  - Returns json with team name and random team quote
+
+
+## Local Use
 Start the Rails server locally:
 ```bash
 rails server
 ```
-Access the API at `http://localhost:3000`.
+Access the API at `http://localhost:3000` or the port your device uses.
 
-### Remote
-
-Access the API at `https://f1-radio-bda6.onrender.com` and use api routes
 
 
 ## Setup Instructions (Local)
@@ -44,19 +64,6 @@ Access the API at `https://f1-radio-bda6.onrender.com` and use api routes
    ```bash
    rails s
    ```
-
-## Routing Information
-- **GET /driver**
-  - Query Parameter: `driver` (e.g., `/driver/max_verstappen`)
-  - Returns json with driver name and random quote.
-  Example: 
-  ```
-  {"driver":"max_verstappen","dialogue":"Simply, simply lovely!"}
-  ```
-
-- **GET /team**
-  - Query Parameter: `team` (e.g., `/team/red_bull`)
-  - Returns json with team name and random team quote
 
 
 ### Acknowledgements
